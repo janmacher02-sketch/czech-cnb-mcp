@@ -1,0 +1,24 @@
+{
+  "name": "czech-cnb-mcp",
+  "version": "1.0.0",
+  "description": "Czech National Bank MCP server — exchange rates, PRIBOR, CZEONIA via ČNB public API",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/http.ts",
+    "build": "tsc",
+    "start": "node dist/http.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
