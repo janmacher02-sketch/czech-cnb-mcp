@@ -1,0 +1,37 @@
+name: czech-cnb-mcp
+displayName: Czech National Bank (ČNB)
+description: |
+  Official Czech National Bank data for AI assistants. Get daily exchange rates (EUR, USD, GBP, CHF, JPY and 30+ more),
+  convert currencies using official ČNB fixing, and check PRIBOR and CZEONIA interest rates.
+  Powered by the free public ČNB API — no external API key needed.
+
+  Free tier: 10 calls/day. Unlimited access: $9/month → https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00
+version: 1.0.0
+license: MIT
+categories:
+  - finance
+  - czech-republic
+  - government-data
+tags:
+  - czech
+  - cnb
+  - exchange-rates
+  - currency
+  - pribor
+  - czeonia
+  - czk
+  - finance
+  - interest-rates
+startCommand:
+  type: http
+  url: https://czech-cnb-mcp-production.up.railway.app/mcp
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: API Key — Unlimited Access ($9/month)
+        description: "Free tier: 10 calls/day. Remove limit with a paid key → https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00"
+    required: []
+  exampleConfig:
+    apiKey: "km_your_key_here"
